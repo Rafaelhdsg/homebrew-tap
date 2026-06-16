@@ -5,21 +5,21 @@
 class Safecut < Formula
   desc "The cuts you'd defend at standup — find idle resources, simulate safely, and stop paying for what you don't use"
   homepage "https://github.com/Rafaelhdsg/safecut"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.0/safecut_2.0.0_darwin_amd64.tar.gz"
-      sha256 "ec227af49d3e02c18f87d5fc7e5bb8f715647f78849c90f593ec78c11f71ddf7"
+      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.1/safecut_2.0.1_darwin_amd64.tar.gz"
+      sha256 "2c1bc983bcaf30f3e12061477de6c864b4c5b336dde36c60fe5355ae3ef6deb2"
 
       define_method(:install) do
         bin.install "safecut"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.0/safecut_2.0.0_darwin_arm64.tar.gz"
-      sha256 "b374a70705d5984aa24c23e1805029b938c92c90b8b9b9d0866d94838e01da2e"
+      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.1/safecut_2.0.1_darwin_arm64.tar.gz"
+      sha256 "8db8021ea403584c311ff2a95da7dd098728a8b0a861228670ba81c53390810c"
 
       define_method(:install) do
         bin.install "safecut"
@@ -29,15 +29,15 @@ class Safecut < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.0/safecut_2.0.0_linux_amd64.tar.gz"
-      sha256 "60353941887d3e509881150bbd65a025b9fdf75571583f5b97407ce03fdcf0db"
+      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.1/safecut_2.0.1_linux_amd64.tar.gz"
+      sha256 "504955e1a72f191afe9e9fcd3783bd6a50d49f0eea8b907ed02497f9c7389f27"
       define_method(:install) do
         bin.install "safecut"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.0/safecut_2.0.0_linux_arm64.tar.gz"
-      sha256 "03788563f451be9289d50a94253e6130a544fb8eef9cf63bed23730183e285f3"
+      url "https://github.com/Rafaelhdsg/safecut/releases/download/v2.0.1/safecut_2.0.1_linux_arm64.tar.gz"
+      sha256 "4a6314f1e271a5924ac69c2cc3cd920367e406511534d3860ab978561274d4ea"
       define_method(:install) do
         bin.install "safecut"
       end
